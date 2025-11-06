@@ -2,38 +2,41 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body,html{
-    background-image: url(./imagens/fundo-geometrico-escuro-com-espaco-de-copia.jpg);
     height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
 }
-main .carrousel{
+
+.fundo-pagina {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100vh;
+    z-index: -1;
+    filter: brightness(0.7);
 }
+
 .carrousel img {
     width: 100%;
-    height: 300px; 
-    object-fit: cover; 
+    height: 100vh; 
+    object-fit: cover;
 }
-html,body{
-    display: flex; /* Adicionado */
-    align-items: center; /* Adicionado */
-    justify-content: center; /* Adicionado */
-    transition: all 0.5s ease-in-out;
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-main .banner-principal{
+.banner-principal{
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
     color: #fff;
     padding: 10px;
-    justify-content: center;
-    background-color: rgba(231, 228, 228, 0);
 }
 main .banner-principal h1{
     margin-bottom: 10px;
