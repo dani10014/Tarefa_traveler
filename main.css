@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    background-image: url(./imagens/fundo-geometrico-escuro-com-espaco-de-copia.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .carrousel{
+    width: 100%;
+    height: 200px;
+}
+
+.carrousel img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+}
+html,body{
+    transition: all 0.5s ease-in-out;
+}
+main .banner-principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    color: #fff;
+    bottom:40vh;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgba(231, 228, 228, 0);
+}
+main .banner-principal h1{
+    margin-bottom: 10px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+main .banner-principal button{
+    margin-top: 20px;
+    width: 100%;
+    padding:20px 0;
+    border-radius: 10px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    width: 70%;
+}
+main .banner-principal button:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+@media screen and (min-width: 764px){
+    main .banner-principal h1{
+        font-size: 3em;
+    }
+    main .banner-principal {
+        bottom:40vh;
+    }
+    main .banner-principal button{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1024px){
+    main .banner-principal h1{
+        font-size: 5em;
+    }
+    main .banner-principal {
+        bottom:10vh;
+    }
+    main .banner-principal button{
+        width: 60%;
+    }
+}

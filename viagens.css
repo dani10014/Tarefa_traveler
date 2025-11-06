@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+.container-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+body .container-mae-todos{
+    margin: 20px;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+}
+header {
+    background-color: #282c31;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.menu-navegacao {
+    list-style: none;
+    font-family: 'Archivo Black', sans-serif; 
+}
+.menu-navegacao li {
+    display: inline;
+    margin: 0 5px;
+}
+.menu-navegacao li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.menu-navegacao li a:hover{
+    color: #a3a3a3;
+    border-bottom: 2px solid #300000;
+}
+main .sobre h2{
+    margin-bottom: 10px;
+    align-items: center;
+}
+main .foto-sobre img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    filter: brightness(0.6);
+}
+main section .texto-populares{
+    margin-top: 20px;
+}
+main .destinos-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 30px;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #e7e7e7;
+}
+main .card{
+    display: block;
+    margin-top: 10px;
+}
+main .card img{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px #fff solid;
+}
+main .card h2{
+    color: #020202;
+}
+main .card p{
+    color: #252525;
+}
+main .card span{
+    color: #300000;
+}
+main .card button{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    justify-content: center; 
+}
+main .card button:hover{
+    background-color: rgb(3, 85, 3);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    main .sobre h2,
+    main section .texto-populares h2 {
+        font-size: 2.0em; 
+    }
+    main .foto-sobre{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    main .foto-sobre p {
+        text-align: justify;
+    }
+    main .foto-sobre img{
+        width: 50%;
+    }
+    body .container-mae-todos {
+        margin: 40px; 
+    }
+    main .card img{
+        height: 250px;
+    }
+}
