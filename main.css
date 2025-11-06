@@ -7,6 +7,7 @@
 body,html{
     height: 100vh;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out; /* Adiciona a animação de transição de volta */
 }
 
 .fundo-pagina {
