@@ -106,14 +106,6 @@ main .card button:hover{
     main section .texto-populares h2 {
         font-size: 2.0em; 
     }
-    main .foto-sobre{
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-    }
-    main .foto-sobre p {
-        text-align: justify;
-    }
     main .foto-sobre img{
         width: 400px;
     }
@@ -134,13 +126,13 @@ main .card button:hover{
         grid-template-columns: repeat(4, 1fr); /* Quatro colunas lado a lado */
         gap: 20px; 
     
-    }
-    main .foto-sobre img{
-        width: 200px;
-}
+    }    
     main .foto-sobre{
         display: flex;
         align-items: flex-start;
         gap: 20px;
+    }
+    main .foto-sobre p {
+        text-align: justify;
     }
 }

@@ -20,16 +20,17 @@ main .carrousel{
     object-fit: cover; 
 }
 html,body{
+    display: flex; /* Adicionado */
+    align-items: center; /* Adicionado */
+    justify-content: center; /* Adicionado */
     transition: all 0.5s ease-in-out;
 }
 main .banner-principal{
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: absolute;
     align-items: center;
     color: #fff;
-    bottom:54vh;
     padding: 10px;
     justify-content: center;
     background-color: rgba(231, 228, 228, 0);
@@ -59,9 +60,6 @@ main .banner-principal button:hover{
     main .banner-principal h1{
         font-size: 3em;
     }
-    main .banner-principal {
-        bottom:50vh;
-    }
     main .banner-principal button{
         width: 70%;
     }
@@ -69,9 +67,6 @@ main .banner-principal button:hover{
 @media screen and (min-width: 1024px){
     main .banner-principal h1{
         font-size: 5em;
-    }
-    main .banner-principal {
-        bottom:50vh;
     }
     main .banner-principal button{
         width: 60%;
